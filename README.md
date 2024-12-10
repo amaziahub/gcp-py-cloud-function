@@ -1,12 +1,13 @@
 
----
 <div>
 
 <div align="center">
 
-> **gcp-py-cloud-function** – This project demonstrates how to create, deploy, and test a simple Google Cloud Function using Python. The function responds to HTTP requests and returns a JSON message.
-
+**gcp-py-cloud-function**
 </div>
+
+> This project demonstrates how to create, deploy, and test a simple Google Cloud Function using Python. The function responds to HTTP requests and returns a JSON message.
+
 
 <div align="center">
 
