@@ -42,7 +42,7 @@ cd gcp-py-cloud-function
 
 ---
 
-### Step 4: Deploy the Cloud Function
+### Step 4: Deploy the Cloud Function using `gcloud`
 Run the following command to deploy the function:
 ```bash
 gcloud functions deploy helloWorld \
@@ -51,7 +51,29 @@ gcloud functions deploy helloWorld \
     --allow-unauthenticated \
     --entry-point hello_world
 ```
+
 ---
+
+## Deploying with Terraform
+If you prefer to manage your Google Cloud Function deployment using **Terraform**, follow these steps:
+
+### Step 1: Install Terraform
+Ensure that Terraform is installed on your machine. If not, follow the [Terraform installation guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli).
+
+### Step 2: Configure Your Google Cloud Project in Terraform
+
+In the `main.tf` file, update the `project` and `region` with your own values.
+You can also modify the function runtime, name, and other settings as required.
+
+### Step 3: Deploy with Terraform
+1. Initialize Terraform:
+```bash
+make init
+```
+2. Apply the configuration to deploy the function:
+```bash
+make apply
+```
 
 ## Testing the Function
 ### Step 5: Get the Function URL
@@ -82,15 +104,23 @@ gcloud functions logs read helloWorld
 ## Cleanup
 ### Delete the Function
 To avoid incurring costs, delete the deployed function:
+#### with `gcloud`
 ```bash
 gcloud functions delete helloWorld
+```
+#### with `terraform`
+```bash
+make destroy
 ```
 
 ---
 
 Happy Coding! 🚀
-```yaml
 
+--- 
+
+## How to Use It
+```yaml
 ---
 
 ### How to Use It
