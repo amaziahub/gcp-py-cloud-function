@@ -1,6 +1,22 @@
-# gcp-py-cloud-function
 
-This project demonstrates how to create, deploy, and test a simple Google Cloud Function using Python. The function responds to HTTP requests and returns a JSON message.
+---
+<div>
+
+<div align="center">
+
+> **gcp-py-cloud-function** – This project demonstrates how to create, deploy, and test a simple Google Cloud Function using Python. The function responds to HTTP requests and returns a JSON message.
+
+</div>
+
+<div align="center">
+
+![Terraform](https://img.shields.io/badge/terraform-0.14-blue)
+![GCP](https://img.shields.io/badge/Google_Cloud-Platform-blue)
+![Python](https://img.shields.io/badge/python-3.10-blue)
+![Google Cloud Functions](https://img.shields.io/badge/Google_Cloud_Functions-blue)
+![CI](https://img.shields.io/badge/CI-Passed-green)
+</div>
+</div>
 
 ## Prerequisites
 
